@@ -17,9 +17,9 @@ const Header = () => {
          ) : (
             <FaBars onClick={showSidebar} />
          )}
-
-         {siderbar && !isDesktop && <Sidebar />}
-         {isDesktop && <Sidebar />}
+         <Sidebar isOpen={siderbar} />
+         {/* {siderbar && !isDesktop && <Sidebar />}
+         {isDesktop && <Sidebar />} */}
       </Container>
    );
 };

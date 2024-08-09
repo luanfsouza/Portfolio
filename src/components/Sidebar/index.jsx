@@ -21,11 +21,17 @@ import {
    FaGithub,
    FaEnvelope,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-const Sidebar = () => {
+const Sidebar = ({isOpen}) => {
 
    return (
-      <Container>
+      <Container isOpen={isOpen}>
+      {isOpen && (
+         <>
+
+         </>
+      )}
          <NavUl>
             <CategoriaTitle>Me</CategoriaTitle>
             <NavUlLi>

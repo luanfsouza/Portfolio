@@ -3,9 +3,16 @@ import styled from "styled-components";
 export const Container = styled.nav`
    width: 300px;
    margin-top: 30px;
-   //background-color: lightpink;
+   background-color: #1e192c;
+   padding: 20px 20px;
    @media (max-width: 767.98px) {
-      width: 100vw;
+      //width: 80vw;
+   }
+   @media (max-width: 991.98px) {
+      //position: absolute;
+      width: 100%;
+      //height: 80vh;
+      top: -700px;
    }
 `;
 
